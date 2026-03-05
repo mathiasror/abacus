@@ -571,8 +571,8 @@ mod tests {
         use BinOp::*;
 
         let all = [
-            And, BitAnd, Or, BitOr, Eq, Ne, Lt, LtEq, Gt, GtEq, Xor, BitShl, BitShr, Add,
-            Sub, Mul, Div, Mod,
+            And, BitAnd, Or, BitOr, Eq, Ne, Lt, LtEq, Gt, GtEq, Xor, BitShl, BitShr, Add, Sub, Mul,
+            Div, Mod,
         ];
         assert_eq!(all.len(), 18);
     }

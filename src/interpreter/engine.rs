@@ -567,11 +567,8 @@ mod tests {
     #[test]
     fn shift_rejects_non_integer_operands() {
         let mut env = Env::new();
-        let err = eval_expr_stmt(
-            &mut env,
-            binary(lit_float(1.0), BinOp::BitShl, lit_int(2)),
-        )
-        .expect_err("expected type error for float shift");
+        let err = eval_expr_stmt(&mut env, binary(lit_float(1.0), BinOp::BitShl, lit_int(2)))
+            .expect_err("expected type error for float shift");
         assert!(matches!(err, EvalError::TypeError { .. }));
     }
 
