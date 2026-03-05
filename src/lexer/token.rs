@@ -40,7 +40,7 @@ pub enum Base {
     /// Literal without prefix
     Decimal = 10,
     /// Literal starts with 0x
-    Hexadecimal = 12,
+    Hexadecimal = 16,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
